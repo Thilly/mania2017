@@ -21,3 +21,21 @@ Multidimensional Approach to Objective Decision Making
     Entropy has been identified as inevitable obliteration unless our understanding of the universe can change.
     Our universe had a start, it will have an end.
   Humans can only solve entropy if humans decide to.
+
+*** dump
+The universe had a start, St.
+The universe has an end, Et.
+The universe has a duration, Et - St
+The Natural duration is Dt.
+A duration of space time, a plank.
+Seed zeta functions with a duration.
+Infinitely divisible range between start and end.
+
+Natural numbers zeta f(n)
+1 2 3
+Rational numbers zeta f(1/n)
+1/1 1/2 1/3
+Real numbers zeta f(1/n^2) cantor
+1/2 1/4 1/8 1/16
+
+Calc should still exist. Can run duration to zero.
