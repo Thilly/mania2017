@@ -1,0 +1,46 @@
+Visualizing the $Navigation of $SpaceTimeArea $Decisions is a tricky bit.
+
+Deciding something is akin to a path finding problem of an $Actor through a $SpaceTimeArea
+  I imagine visualizing individual tasks like a tiny bug inside of a fish inside of a fish tank trying to steer the fish.
+  Entropy in this case can be seen as water constantly filling up the tank at an increasing rate.
+    As more and more water comes in, more space, the tank heater, filter, and fish have to work harder for same results.
+      If the walls of the tank are too weak, the tank-$SpaceTimeArea will lose to the 'big rip'
+      If the walls of the tank are strong enough to allow the water to continually flow in until all the fish, plants, and heat get flushed out. The tank-$SpaceTimeArea will lose to a 'heat death'.
+    Either way, entropy is the encroaching obliteration for our $Actors and $SpaceTimeAreas.
+
+  The tiny bug-$Actor has to convince the fish-$Actor using $Objective means gathered from the fish-$SpaceTimeArea to achieve some goal in the tank-$SpaceTimeArea.
+  Then the tiny bug-$Actor can further use the fish-$Actor to observe and quantify the tank-$SpaceTimeArea to make better $Decisions about where to steer the fish-$Actor in the $Future.
+
+  bug-$Actor must obey the $Objective rules of the fish-$SpaceTimeArea and the fish-$Actor.
+    Assuming subjective information about the fish-$SpaceTimeArea increases entropy.
+      If the bug-$Actor is somehow convinced the fish-$SpaceTimeArea is different than it is.
+       Inconsistencies will bring pain and suffering to the bug-$Actor since the effort in steering a jellyFish-$Actor will seem like un-productive toil.
+    The bug-$Actor decided to move the fish-$Actor, it will continue expending effort to move the fish-$Actor until:
+      bug-$Actor is lost to entropy
+      fish-$Actor moves, bug succeeds and decides to do something else
+      fish-$Actor is uncooperative and does not move, or does not move how expected.
+        (Be Objective) The bug-$Actor can use the new observation to change the $Decision in bug-$Individual to closer match the fish-$SpaceTimeArea
+        (Change Goals) The bug-$Actor can decide to no longer try to move the fish.
+
+I think We can visualize this traversal of the bug-$Actor through the tank-$SpaceTimeArea as a path finding problem of an $Actor through a $SpaceTimeArea through a $SpaceTimeArea.
+  bug-$Actor has identified important qualities of the tank-$SpaceTimeArea
+  bug-$Actor can see the qualities in the tank are not evenly dispersed.
+    Light towards up
+    plants towards down
+    food in small localized regions
+  The tank-$SpaceTimeArea can be seen as a volume gradient of proximity to goals.
+  When steering the fish-$SpaceTimeArea, bug-$Actor only needs to start in the directions the goal gradient is pointing you toward.
+    The bug-$Actor can take samples from the tank-$SpaceTimeArea while steering the fish-$Actor to make sure the direction is always the direction bug-$Actor wants to go.
+    If the decision making process becomes $Continious the bug-$Actor will always be heading for a goal in line with $Decisions in bug-$Individual.
+  “When there is no desire,
+  all things are at peace.”
+  ― Lao Tzu, Tao Te Ching
+
+When the expenditure of energy, observations of pain and suffering are added to the goal gradient.
+  It becomes very easy to make decisions over multiple scales that can benefit all parties involved.
+  But A drop in entropy is not always evidence of a bad decision
+    Find better state of organization AFTER increasing entropy shortly in all scales of decision making is better when absolutely necessary
+      Health (individual) alcohol on a wound causes pain with aims to prevent infectious bacteria from making you sick
+      Honesty (relationship) disagreements in personal identity leave an opportunity to strengthen a relationship
+      Industry(society scales) failing industry leaves a void for an increase in education
+      Biodiversity(planetary scales) dinosaurs left a void for us

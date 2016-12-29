@@ -1,0 +1,59 @@
+Objective reality is broken into at least three different 'spacetime areas'.
+  To objectively solve reality, we must create a function that can achieve a goal in the $Future by producing a decision in the $Present based on information from the $Past.
+  If we can objectively solve each piece of space time we will have objectively solved our current understanding of space time.
+  The teachings of the previous philosophers have already solved past, present, and future.
+    However their teachings are open to interpretation and do not scale well.
+    Scaleable mathematical algorithms and heuristics to act as the tools that facilitate our decision making for large datasets in 'space time areas' are a reality.
+
+  $Past: (objective historical measurements, observations, and storage)
+    Record human knowledge, discovery, and creation in a free, public, and mathematically verifiable structure.
+    Measurements aim to increase confidence in making decisions going forward.
+      "Hindsight is 20/20"
+    Natural Instantiation:
+      DNA (unbroken chain from abiogenesis to now)
+    Cultural Signifigance:
+      Father, judicial branch, human collective knowledge, precedent in legal matters
+      "Adam begat Seth; and Seth, Enos"
+      "Like my father before me"
+    Traditional Human Interfaces
+      Anecdotal knowledge that is verifiable through familiar acquaintances
+      Precedent in legal proceedings
+    Human Created Mathematical Solution:
+      merkle trees - Wikipedia
+      internet - public forum
+
+  $Present: (when decisions are made, human effort, task execution)
+    Understand all of the information at your disposal before making a decision with transparent reasoning and cost analysis.
+      Since each experienced reality is completely different, the decision should be aggregated from multiple realities.
+    Decisions aim to resist entropy while increasing organization
+    Natural Instantiation:
+      Human Mind (neurons, memories)
+      Trying to stay alive and then solve inconveniences
+    Cultural Significance:
+      Son, legislative branch, gut feeling
+    Traditional Human Interfaces
+      Parliament
+      Insurance risk assessments
+      Scientific community, Industry veterans, Experienced teams
+      Previous philosophy as a training set for $Individual
+    Human Created Mathematical Solutions:
+      Machine Learning - Neural Networks - Watson
+      Markov chains - Natural Language Processing
+
+  $Future: (planning, complexity reduction, establishing boundaries, division of labor, collective effort)
+    Understand best how to take steps now to get closer to goal.
+      Looking ahead may not answer anything, but look for middle ground between now and goal to find smaller tasks to complete.
+      Estimate actions to take now to get closer to goal.
+    Natural Instantiation:
+      Task allocation in ant colonies (do a tiny task with the colony in mind)
+    Cultural significance:
+      Spirit, legislative branch, unions, Art of learning
+      Pyramids
+      Panama canal
+      Space Travel
+    Traditional Human Interfaces
+      Rules, advice, law, commandments, mandates.
+    Human Created Mathematical 'heuristics':
+      Super tasks - Zeno's Paradoxes
+      Heathrow - Heathrow airport
+      Bin packing algorithms

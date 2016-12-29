@@ -1,0 +1,74 @@
+Philosophical Arguments/Anecdotes/Discussions for "Resisting Entropy":
+  A dumping ground for discussing different human philosophies.
+  Anecdotes to help explain some vauge points/questions.
+  Less objective in this page, anecdotal discussions, hearsay, and personal interpretations of resisting entropy with existing philosophers.
+
+  Epictetus Discourses:
+    1: hercules, would not have been resisting entropy very well
+    2: figs + greatness, not instant gratification, improvement over time
+    3: indifferent to values, use only objective measurement of natural world to predict the future of the natural universe
+    4: impressions, idea and stretch between response, think, plan and make objective informed decision if possible
+    5: coal and grime, surrounding yourself with people who are terrible at resiting entropy, effects your ability to do so.
+
+  Aurelius meditations:
+    purpose: free to decide own purpose from within the bounds of the universe
+    service: encourage creation, create better tools
+    plan for future and different of time variability: understand goals are a moving target
+    cherish life: quantum immortality, amount of time left is irrelevant
+    external opinions disregarded: anecdotal data is disregarded
+    equinimity: sustainability in methods of preserving high organization
+
+  Naturally Occurring In Humans (Sand castles):
+    Take a person to a beach.
+    They will most likely dig, pile up, move and organize sand without being told.
+    They MAY create something, a drawing, a symbol, or a pile they call theirs.
+      Imagine stepping back to appreciate or at least get the shape of their scratches all into the field of view.
+    They MAY try to protect the sandcastle from the tide.
+      They will understand that you cannot FIGHT entropy, at the very least it is pointless over a large enough time span.
+      The tide will inevitably take the sandcastle.
+        Imagine seeing your creation vanish under some sea foam.
+      It is up to the being with agency to be ok with this reality.
+
+  Match Girl (resistance against insurmountable adversity):
+    Even in the face of unstoppable inevitable obliteration (heat death, big rip)
+    There can still be experiences for a being with agency that create fulfillment over any suffering or pain
+    Even if humans cannot 'outsmart' entropy.
+      It's still all worth it if we can experience satisfaction, happiness, and fulfillment.
+      If the state of the universe is not at our mercy, then why worry?
+        Create tools to increase leisure and reduce suffering for anyone.
+
+  Turing Test (humans lie/are ignorant):
+    An AI can make accurate decisions that resist entropy on different scales (from plank-time to 14bn years)
+      calculate energy over some fitness function for states of the universe
+    It's possible that it may SEEM like its lying, but the immediately understandable correlations do not match the universe or event under scrutiny.
+      It is possible that it will fail a turing test but still beat out a human.
+      Skip over a local maxima of entropy to aim for a higher position.
+
+  Morally Questionable Falsehoods (white lies, technically corrects):
+    Local minimum/maxima of the gradient descent algorithm
+    Up to agents involved in decision to determine if the drop in entropy will be worth it
+
+  Chinese room (arbitrary vs objective understanding)?:
+    The symbols individually have no objective meaning in their current state.
+      The symbols carry with them their ancestry, etymology and 'dna'.
+        Some symbols are new with each generation/abstraction, but constrained to the 'style' of the existing.
+        Symbols 'can' be understood within formulas and statements from within a collective body (possibly, implementation detail, sudoku)
+      Without the cultural history, those symbols would not come about the same, nor would they have any meaning to derive from.
+        Assigned significance by humans on arbitrary terms (some may have numeric properties, but aesthetic symbols nonetheless)
+
+    Collectively, maybe?
+      Its a neural network trying to reverse engineer a merkle tree.
+        The evolution the symbols have taken over their ancestry might be carried in the 'dna' of the symbols.
+      The comparison is analyzing the whole universe of symbols, to derive the inspiration for the symbols.
+        The change and gradient may be reverse engineered to try and understand the direction taken of the training/fitness algorithm.
+      Resisting entropy by organizing
+
+    If Humanity has no free will due to all 'outputs' being pre-determined through the 'inputs' (state of the universe and fundamental physics).
+     No sense in distinguishing the quality of thought between an organic machine and an inorganic machine.
+     The inputs fed to the inorganic machine are reproducible from the rules of the universe through an organic abstraction.
+
+    If Humanity does have free will due to quantum fluctuations and the uncertainty principle.
+      We are just beginning to understand(?) the quantum universe.
+        May just be higher order/dimension/abstraction math.
+        May soon be understood, and the free will argument is revisited.
+      I feel the question might need framing, or maybe I still don't get it?.

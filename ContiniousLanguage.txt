@@ -1,0 +1,140 @@
+In order for me to record the ideas I'm trying to share, I need to create some placeholders so I can assemble these ideas into the single larger idea.
+  I am presenting some vocabulary that can act as a shortcut to these ideas when they come up again.
+    I am not an authority on discrete or continuous multidimensional language nor am I pretending to be.
+    I am just detailing the components to some of my larger ideas regarding objective reality.
+
+  $Packet
+    The other definition of quantum, as I don't want to mistake a $Packet for the $SpaceTimeArea of quantum mechanics
+    A nondescript piece of $Information
+    A granular component of $PhilosophicalMagnitudes, and $SpaceTimeAreas
+    A single $Choice in $Individual
+    A single $Actor in a $Community
+    A plank length or fundamental particle in the $SpaceTimeAreas
+
+  $Information
+    Elements from the power set of $Packets.
+    A collection of $packets that can be observed and measured in the $SpaceTimeAreas.
+    A set of $Actors is $Information
+    A bounded $SpaceTimeArea is $Information in the higher $SpaceTimeArea
+
+  $Objective
+    $Objective information is not an isolated fact in a $SpaceTimeArea
+    $Objective means you are making an assumption about the $SpaceTimeArea using the information available
+    An $Objective observation can end up being right or wrong
+      $Objective is a moving target
+      $Objective is statistics, not mandates
+        Holding onto objective convictions in spite of overwhelming adversity is possibly brave, powerful and a heroic stand against entropy.
+        Holding onto subjective convictions in spite of overwhelming evidence is not beneficial.
+
+  $Objectivity
+    $Objectivity aims to increase the organization of information
+    $Objectivity learns from mistakes
+    $Objectivity is learning
+
+  $Subjective
+    $information that is only retrievable from $Individual $SpaceTimeAreas
+    $Subjective information that is confirmed in higher $SpaceTimeAreas can become $Objective
+
+  $Discrete
+    Each $Packet is distinct from one another
+    There is a clear boundary between $Packets like pages in a book, seconds in a minute
+    The $packets can be laid out and counted
+
+  $Powerset($Information):
+    A powerset is a function that takes in information and creates an new set.
+    The new set is composed of all possible re-arrangements of the input set, in this case $Information
+
+  $Continious
+    In continuous space a $Packet is not under different rules/laws than its neighbors.
+    In continuous space, $Packets may not be discernible from one another as the $Packet could be the fabric of the $SpaceTimeArea
+    It means that a line would have no breaks or corners.
+
+  $Heuristic
+    A process that helps in making decisions.
+    A $Heuristic may not be 100% correct all the time.
+    A $Heuristic aims to get you in the right $SpaceTimeArea and further analysis can optimize.
+    Local minima and local maxima are obstacles for $Heuristics
+
+  $SpaceTimeAreas:
+    The universe of observation, prediction, and quantifying success.
+    The $SpaceTimeArea will contain everything needed to make objective $Decision.
+
+  $Action
+    Individual point in $SpaceTimeAreas
+    Contained within $Decisions
+
+  $Decide
+    Boundaries to $Decisions in $SpaceTimeAreas
+    Begins or ends a $Decision
+    Different than $Decision
+
+  $Decision
+    Ranges within the $SpaceTimeAreas
+    Premises for making $Actions
+    Different than $Decide
+
+  $Actor
+    A single central point of decision making ability
+    As a $Individual $Heuristic for visualizing the $PhilosophicalMagnitudes I imagine each actor as single input into a Reimann Zeta type family function.
+      $Actions can be individual points in the critical strip.
+      $Deciding changes the geometry of the critical strip.
+      $Decisions can be illustrated as the critical strip.
+      Further into the series the inputs are, the more abstract the goal/truth/.
+    $Objective $Reality exists as the critical line in a Reimann Zeta function.
+      If it is possible for $Actions taken in an $Objective reality to be $Objectively proven true.
+        It would also be possible to $Decide to act $Objectively.
+        Objective $Decisions may be provable for $Past, $Present, and $Future
+          Prime numbers on the critical line act as my $Individual $Heuristic for visualizing objective demonstrable truths, laws, constants, etc.
+    $Future might be solved if we can get quantum tunneling down.
+      Our $Decisions in the $Future might be able to ignore some objective rules of the universe.
+
+  $Stream
+    Changes in $Packets or $Information are averaged out when looking at the whole of $SpaceTimeArea.
+    Averaging a moving $Packet across a temporal dimension creates a body of $Information that resembles a snake from the old nokia phone game.
+    All of the space occupied by the $Packet over the duration would be occupied by the $Packet when looking at the entire $SpaceTimeArea
+
+  $SpaceTimeArea
+    First imagine space, the three dimensional space your $Spacesuit is contained in.
+    Your body, the room you are in, the building the room is in, the city, country, planet, and so on.
+    Imagine that environment viewed over the course of time.
+      Things that moved a lot within those boundaries would look like a $Stream
+
+    Things that did not move or change within those boundaries would look perfectly clear.
+
+    Scales and duration of influence for further illustrating the multi-dimensinal nature of our $Objective $SpaceTimeAreas.
+      $Spacesuit (milimeters to meters, human lifetime, seconds to years)
+        Last few minutes would create a $Stream across your living area
+        Nokia snake.
+
+      $Building (meters to kilometers, construction lifetime, years to decades)
+        The lifetime of the building would appear as a pretty clear perforated structure with $Streams flowing in, out, and around the building landscape.
+        Rock in shallow water stream/brook/river.
+
+      $City (kilometers, generation scales, decades)
+        Grows up out of land like a concrete moss, spreads and gets taller
+
+      $Landscape (hundreds of kilometers, species scales, millenia)
+        $Streams slither across a changing landscape, blemishes (cities) on the landscape appear and move or disappear
+
+      $Planet (thousands of kilometers, geologic scales, eras, hundreds of millions of years)
+        $Planet starts as cloud of fire, cools and grows connections with neighboring $Planets, eventually is consumed by neighboring star or darkness
+      .
+      bigger
+      .
+      longer
+      .
+      $Universe (universal scales, billions of light years, billions->10^lots of years)
+        The $Universe was small and hot which expanded to billions of light years across and will continue to expand until cold and dark.
+
+      $Navigation
+        Going from one area in a $SpaceTimeArea to another
+        Gradient descent algorithms - Back propagation
+
+    Subjective reality:
+      This is where ideas, creation, and $Decisions come from.
+      $Individual (all possible universal scales, time periods, realities)
+        Any reality you wish to create can be created within your $Individual reality.
+        Can help hold onto ideas until you can objectively experiment with your ideas.
+        Can create new geometries for new math.
+        Can create new art for displaying new feelings.
+        Can create new tools for reducing the amount of pain, suffering and toil.
