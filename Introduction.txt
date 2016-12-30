@@ -1,25 +1,14 @@
 Multidimensional Approach to Objective Decision Making
 
-  I opine that there is only one natural constant, time.
-  I opine that all Reals are points, ranges, areas, volumes, ... nD shapes produced with respect to a duration in time.
-  This larger structure is bounded and finite but infinitely divisible. (SuperTasks)
+The universe had a start, St.
+The universe has an end, Et.
+The universe has a duration, Et - St
+The Natural duration is Dt. A duration of space time, a plank.
+Seed zeta functions with a duration.
+Infinitely divisible range between start and end.
 
-  The real number domain is between 0 and 1.
-
-  Very interesting math happens with this new assumption.
-    We can look at an entire universe with a single family of functions.
-    Space and time become solvable and recursive.
-    A universe can be encoded into a single function with respect to time.
-    t < C can be identified as the $Past
-    t = C can be identified as the $Present
-    t > C can be identified as the $Future
+  The real number domain is between St and Et.
+  	0, 1 in decimal
 
   The universe is a bounded a hypervolume
-  Reimann Zeta functions critical strip, line, points.
-
-  We only took a peek at the walls of what we are all living in and as far as we can tell, it will end eventually.
-    Entropy has been identified as inevitable obliteration unless our understanding of the universe can change.
-    Our universe had a start, it will have an end.
-  Humans can only solve entropy if humans decide to.
-
   It wasn't powersets of powersets, its zetas of zetas.
