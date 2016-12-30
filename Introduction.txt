@@ -10,11 +10,11 @@ Multidimensional Approach to Objective Decision Making
     We can look at an entire universe with a single family of functions.
     Space and time become solvable and recursive.
     A universe can be encoded into a single function with respect to time.
-    t < .5 can be identified as the $Past
-    t = .5 can be identified as the $Present
-    t > .5 can be identified as the $Future
+    t < C can be identified as the $Past
+    t = C can be identified as the $Present
+    t > C can be identified as the $Future
 
-  The universe is bounded in a hypervolume
+  The universe is a bounded a hypervolume
   Reimann Zeta functions critical strip, line, points.
 
   We only took a peek at the walls of what we are all living in and as far as we can tell, it will end eventually.
