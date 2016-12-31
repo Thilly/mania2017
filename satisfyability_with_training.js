@@ -2,31 +2,28 @@ var UNIVERSE = function() {
   var SEED = Math.random();  // “The beginning is the most important part of the work.” ― Plato, The Republic
   var DURATION = 1;
 
-  this.UNIVERSAL_CONSTANT = function(plank_duration) {
+  function UNIVERSAL_CONSTANT(plank_duration) {
     return SEED;
-  };
+  }
 
-  this.UNIVERSAL_LINEAR = function(plank_duration) {
-    return plank_duration + this.UNIVERSAL_CONSTANT(plank_duration);
-  }; // "I want to build a Taj Mahal that will never get its last tile."
-  this.UNIVERSAL_SQUARE = function(plank_duration) {
-    return plank_duration * plank_duration + this.UNIVERSAL_LINEAR(plank_duration);
-  };
-  this.UNIVERSAL_CUBE = function(plank_duration) {
-    return plank_duration * plank_duration * plank_duration + this.UNIVERSAL_LINEAR(plank_duration);
-  };
-  // "yadda yadda yadda" - Elaine
+  function N_DIMENSIONAL_SPACE(dimensions, plank_duration) {
+    if (dimensions === 0) {
+      plank_duration = plank_duration + this.UNIVERSAL_CONSTANT();
+    } else {
+      plank_duration = plank_duration * this.N_DIMENSIONAL_SPACE(--dimensions);  // "yada yada" - https://www.youtube.com/watch?v=gJpgW2cRIsk
+    }
+    return plank_duration;
+  }
 
-  this.UNIVERSAL_DURATION = function(plank_duration) {
+  function UNIVERSAL_DURATION (plank_duration) {
     return DURATION;
-  };
-
-  this.UNIVERSAL_ENERGY = function(plank_duration) {
+  }
+  function UNIVERSAL_ENERGY (plank_duration) {
     var energy = Math.pow(Math.E, -this.UNIVERSAL_SQUARE(plank_duration));  //
     return 1 / (1 + energy);  //
-  };
+  }
 
-  this.OBJECTIVE_OBSERVATION = function(plank_duration) {
+  function OBJECTIVE_OBSERVATION (plank_duration) {
     return [
       this.UNIVERSAL_CONSTANT(plank_duration),
       this.UNIVERSAL_LINEAR(plank_duration),
@@ -34,8 +31,45 @@ var UNIVERSE = function() {
       this.UNIVERSAL_CUBE(plank_duration),
       this.UNIVERSAL_ENERGY(plank_duration)
     ];
+  }  // query the universe
+
+  /** needed? **/
+
+  function UNIVERSAL_LINEAR (plank_duration) {
+    return plank_duration + this.UNIVERSAL_CONSTANT(plank_duration);  // electron, qubit, super_plank stars, (1d projection into 2d spacetime)
+  } // "I want to build a Taj Mahal that will never get its last tile."
+  function UNIVERSAL_SQUARE (plank_duration) {
+    return plank_duration * plank_duration + this.UNIVERSAL_LINEAR(plank_duration);  // phospho-lipid bilayer, (2d projection into 3d spacetime)
+  }
+  function UNIVERSAL_CUBE (plank_duration) {
+    return plank_duration * plank_duration * plank_duration + this.UNIVERSAL_SQUARE(plank_duration);  // sub_plank strings, super_plank black holes (3d projection into 4d spacetime)
+  }
+  var TEMPORAL_MATH = function() {};  // durations handled differently than reals?
+  var SPATIAL_MATH = function() {
+    // laws of universe already explain how to deal with areas/volumes.
+
+    function add(left, right) {}
+    function multiply(left, right) {}
+
+    function plank_PP(left, right) {}  // traverse spacetime
+    function plank_MM(left, right) {}  // traverse spacetime
+
+    function plank_GP(left, right) {}  //
+    function plank_GM(left, right) {}  //
+
+    return [
+      add,       // area/volume + volume
+      multiply,  // geometric expansion  // # of dimensions correlates to geometric series
+
+      plank_PP,   // slice spacetime into an additional plank, '++' (1/1 + (++denominator?)
+      plank_MM,   // 'zoom' out in spacetime with one less plank, '--' (1/1 + (--denominator?)
+
+      plank_GP,   // geometrically zoom in, 'geometric ++'
+      plank_GM   // geometrically zoom out 'geometric --'
+    ]
   }
 }; // “If you wish to make an apple pie from scratch, you must first invent the universe.” ― Carl Sagan
+
 var BEGINNING = 0;  // “Isn't it nice to think that tomorrow is a new day with no mistakes in it yet?” ― L.M. Montgomery
 var reality = new UNIVERSE();  // "My goal is simple. It is a complete understanding of the universe, why it is as it is and why it exists at all." - Stephen Hawking
 var plank_duration = reality.UNIVERSAL_DURATION();  // “I think; therefore I am.” ― René Descartes
