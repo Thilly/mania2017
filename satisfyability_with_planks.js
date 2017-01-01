@@ -13,7 +13,7 @@ var PLANK_LENGTH = 1 / STEPS;  // plank of time between start and end
 var REQUIRED_CONFIDENCE = .6;  // sigmoid confidence between 0 and 1
 
 var EXTRA_FUNCTIONS = 30;      // how many additional functions to add
-var MIN_TO_SATISFY = 12;        // how many functions must be 'true/confident' to satisfy
+var MIN_TO_SATISFY = 12;       // how many functions must be 'true/confident' to satisfy
 
 var FUNCTIONS = [              // few generic functions
   function justX (timeValue) {
@@ -33,23 +33,24 @@ var FUNCTIONS = [              // few generic functions
   }
 ];
 
-function satisfy(function_list, plank_length) {
+function satisfy(function_list, plank_length) {  // given a list of observations, and a plank, see if it can be satisfied
   for(var plank = plank_length; plank < 1; plank += plank_length) {
-    var satisfied = 0;
-    var values = [];
-    for(var i = 0; i < function_list.length; i++) {
-      var value = function_list[i](plank);
-      values.push(value);
+    var satisfied = 0;  // keep count of how many criteria have been satisfied within this plank
+
+    var values = function_list.map(function(observation) {
+      var value = observation(plank);
       satisfied += confidenceChecker(value);
-    }
+      return value;
+    });
+
     if (satisfied > MIN_TO_SATISFY) {
-      console.log('Satisfied by: ' + plank);
       console.log(values);
+      console.log('Satisfied by: ' + plank);
       return values;
     }
   }
-  console.log('Not satisfied by: ' + plank);
   console.log(values);
+  console.log('Not satisfied by: ' + plank);
   return values;
 }
 
