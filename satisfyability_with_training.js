@@ -1,5 +1,5 @@
 var UNIVERSE = function() {
-  var SEED = Math.random();  // “The beginning is the most important part of the work.” ― Plato, The Republic
+  var SEED = new Math.random();  // “The beginning is the most important part of the work.” ― Plato, The Republic
   var DURATION = 1;
 
   function UNIVERSAL_CONSTANT(plank_duration) {
