@@ -1,9 +1,24 @@
+/**
+ * TODO: still working the kinks out of the structure, and training.
+ *  'universe' and 'plank' should be own modules
+ *  treat plank like a rational number
+ *  try and keep integer num/denom to avoid floating point precision issues
+ *
+ */
+
 var UNIVERSE = function() {
-  var SEED = new Math.random();  // “The beginning is the most important part of the work.” ― Plato, The Republic
+  var SEED = Math.random();  // “The beginning is the most important part of the work.” ― Plato, The Republic
   var DURATION = 1;
 
   function UNIVERSAL_CONSTANT(plank_duration) {
     return SEED;
+  }
+  function UNIVERSAL_DURATION (plank_duration) {
+    return DURATION;
+  }
+  function UNIVERSAL_ENERGY (plank_duration) {
+    var energy = Math.pow(Math.E, -this.UNIVERSAL_SQUARE(plank_duration));  //
+    return 1 / (1 + energy);  //
   }
 
   function N_DIMENSIONAL_SPACE(dimensions, plank_duration) {
@@ -13,14 +28,6 @@ var UNIVERSE = function() {
       plank_duration = plank_duration * this.N_DIMENSIONAL_SPACE(--dimensions);  // "yada yada" - https://www.youtube.com/watch?v=gJpgW2cRIsk
     }
     return plank_duration;
-  }
-
-  function UNIVERSAL_DURATION (plank_duration) {
-    return DURATION;
-  }
-  function UNIVERSAL_ENERGY (plank_duration) {
-    var energy = Math.pow(Math.E, -this.UNIVERSAL_SQUARE(plank_duration));  //
-    return 1 / (1 + energy);  //
   }
 
   function OBJECTIVE_OBSERVATION (plank_duration) {
@@ -68,6 +75,12 @@ var UNIVERSE = function() {
       plank_GM   // geometrically zoom out 'geometric --'
     ]
   }
+
+  return {
+    'UNIVERSAL_DURATION': UNIVERSAL_DURATION,
+    'OBJECTIVE_OBSERVATION': OBJECTIVE_OBSERVATION,
+    'UNIVERSAL_CONSTANT': UNIVERSAL_CONSTANT
+  };
 }; // “If you wish to make an apple pie from scratch, you must first invent the universe.” ― Carl Sagan
 
 var BEGINNING = 0;  // “Isn't it nice to think that tomorrow is a new day with no mistakes in it yet?” ― L.M. Montgomery

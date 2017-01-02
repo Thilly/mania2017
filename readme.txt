@@ -1,3 +1,10 @@
+satisfyability_with_planks.js
+  The functions are 'plotted' in a duration and the duration is chopped up.
+  Each plank of the duration is checked for satisfyability.
+  If M is the number of planks
+  If N is the number of functions
+  O(N*M) for brute force satisfyability in continuous space
+
 Possibly easiest order to read
     Intro
     ContiniousLanguage

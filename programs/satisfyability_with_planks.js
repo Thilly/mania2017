@@ -5,15 +5,15 @@
  *  Each plank of the duration is checked for satisfyability.
  *  If M is the number of planks
  *  If N is the number of functions
- *  O(N*M) for satisfyability in continuous space
+ *  O(N*M) for brute force satisfyability in continuous space
  */
 
 var STEPS = 100;               // 'resolution' of planks
 var PLANK_LENGTH = 1 / STEPS;  // plank of time between start and end
-var REQUIRED_CONFIDENCE = .6;  // sigmoid confidence between 0 and 1
+var REQUIRED_CONFIDENCE = .6;  // sigmoid confidence, to determine 'truth' value between 0 and 1
 
-var EXTRA_FUNCTIONS = 30;      // how many additional functions to add
-var MIN_TO_SATISFY = 12;       // how many functions must be 'true/confident' to satisfy
+var EXTRA_FUNCTIONS = 50;      // how many additional functions to add
+var MIN_TO_SATISFY = 15;       // how many functions must be 'true/confident' to satisfy
 
 var FUNCTIONS = [              // few generic functions
   function justX (timeValue) {
