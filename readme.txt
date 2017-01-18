@@ -36,3 +36,5 @@ $WordsLikeThis means that I probably have it defined in one of these pages.
   words-$LikeThis means that we're talking about the 'words' that is of type '$LikeThis'
 
 Pips added, for 'planks in progress' small digestible bites of info.
+Story added, longer more than one plank for same idea.
+Will become sub-planks and nested/linked information in the 3d 'space'.
