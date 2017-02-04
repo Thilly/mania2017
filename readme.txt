@@ -1,14 +1,13 @@
   'philosophy'
 
-  Be ok with not knowing.
-  Do not be ok with being misinformed.
-  Seek to live in harmony with nature, and neighbors
-
+    Be ok with not knowing.
+    Do not be ok with being misinformed.
+    Trust in yourself, and those around you.
+    Seek to live in harmony with nature, and neighbors.
     Resist Entropy
-      Trust in yourself, and those around you.
     	Seek out others, do not forget your family and friends - companionship, listening
     	look for ways to reduce suffering, shame - listen / care
-    	look for ways to expand communities and remove arbitrary boundaries - avoid putting up walls 
+    	look for ways to expand communities and remove arbitrary boundaries - avoid putting up walls
     	look for ways to deepen friendships - network / cooperate / support / trust
     	look for ways to explain the universe -  ask "why is?" / learn / craft / discover / teach
     	look for ways to organize information - order / hang / place / arrange
@@ -50,8 +49,6 @@
   'end game'
   	Space Baby
     Create a body, home, city, planet, universe we are happy to call home, then see what else is out there.
-
-
 
 
 I try to organize my ideas like code.
