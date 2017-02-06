@@ -1,0 +1,39 @@
+Generalize
+  1:
+  2:
+  3:
+
+Inconsistencies
+  1: The graph y=x^2 and y=x intersect at a non-mathematically significant point.
+    Not inflection point
+    Non-zero tangent
+    Change math 'universe' at 1
+
+  2: The natural, integer, rational and irrational number systems can be used for large values (>2) and our day to day math.
+    Abstract "Universe" (-infinity, infinity)
+      points, values, steps, discrete
+      subjectivity, language
+
+  3: The Real numbers are not points, but areas, durations, pieces of something larger.
+      Real "Universe" (0, 1)
+      ranges, areas, probabilities, durations, lengths, continuous
+      objectivity, relative observations and comparisons
+
+labelingUniverse
+  Pd: PastDuration
+    The whole context, from the beginning up to the present.
+  Fd: FutureDuration
+    The potential states of the context.
+  Nd: NaturalDuration
+    The length of this entire context build from pieces.
+    Pd (1/2) + Fd (1/2) = Whole context 2/2 (1)
+
+  Pt: Present
+    The current state, now.
+  St: Start
+    The event that began the context.
+  Et: End
+    The event that will end the context.
+
+
+
