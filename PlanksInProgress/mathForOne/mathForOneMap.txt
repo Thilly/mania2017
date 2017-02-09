@@ -1,15 +1,47 @@
 Generalize
-  1:
+  What can each dimension of information give us.
+  How can it be displayed? Spin?
+  What does it look like plotted against time?
 
-  2:
+    1d (x):
+      Value, intensity, magnitude, speed
+      1d Dt is ac(de)celeration
 
-  3:
+    2d (x, y):
+      curve, horizon, edge, velocity
+      2d Dt is sound
+
+    3d (x, y, z):
+      texture, volume
+      3d Dt is a field
+
+    4d (w, x, y, z):
+      spacetime, room, event, fishtank
+      4d Dt is experience (human?)
+
+  Visualize different forces by plotting the dimensions against time.
+
+  each dimension carries with it better opportunities for determining information
+  ( 1 information 1 )( 2 choice 2 )( 3 decision  3 )( 4 ??...
 
 
 I
-  1:
+  1: With each step through a function the universe changes.
+    Its not just a change in phase (complex math still has a place?).
+    We needed to account for the change respective to own interactions somehow.
+    Look at universal slices as slices of bread, not slices of paper.
 
-  2:
+  2: When plotted with different bounds, visualizing a 4th dimensional change becomes easy.
+
+
+TimeCube
+  1: Continuation of 'i' discussion, can probably be removed doesn't add much outside of getting excited.
+
+
+TimeCube2
+  1: Spin can be encoded with a number of linear algebra methods.
+    Re constructing the spin is where the art is at.
+    From spin of single electron we can create an entire universe.
 
 
 Inconsistencies
@@ -51,28 +83,41 @@ labelingUniverse
 
 
 MetricTime
-  1:
-  2:
+
+  1: Time is broken up into seconds which are, "the duration of 9 192 631 770 periods", largely arbitrary
+    Gives illusion of lumpy universe, self-defined cage built from ossilations of an atom.
+    easier to recognize planks as something larger first.
+    U: universal plank
+    Y: human year plank
+    HH: human history plank
+
+    1U = 14billion Y?
+    1Y big bang?
+    ??
+    10billion Y earth?
+    13.2billion Y dinisaurs?
+    14billion Y humans?
+    12000(?) Y = HH
+
+    0.0HH = first structure or just *something neat*
+    .5HH = now
+    1HH = number years * 2
+      think of endgame when deciding plans
+
+  2: When working with time, start and end are all the relative points needed.
+    everything else is a piece, portion, arc of the larger event which can be handled with same recursive nature
 
 
 MetricTime2
-  1:
-
-
-TimeCube
-  1:
-
-
-TimeCube2
-  1:
+  1: The math to use the planks has been largely defined already.
+    Naturals, Integers, Rationals, Irrationals are all there to act as our language to discuss the universe.
+    The universe becomes a lot less granular
 
 
 TruthTableProgression
-  1:
-  2:
-  3:
+  A table as just truth statements can be extended up through numbers and finally a graph.
+  If the function for that graph can be found, the rest of the truth vales can be determined with just a pass through a function.
 
 
 UniversalPlot
-  1:
-  2:
+  Plotting the base functions in the universe of -1 to 1
