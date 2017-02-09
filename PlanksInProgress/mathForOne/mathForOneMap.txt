@@ -1,7 +1,16 @@
 Generalize
   1:
+
   2:
+
   3:
+
+
+I
+  1:
+
+  2:
+
 
 Inconsistencies
   1: The graph y=x^2 and y=x intersect at a non-mathematically significant point.
@@ -19,21 +28,51 @@ Inconsistencies
       ranges, areas, probabilities, durations, lengths, continuous
       objectivity, relative observations and comparisons
 
+
 labelingUniverse
   Pd: PastDuration
     The whole context, from the beginning up to the present.
+
   Fd: FutureDuration
     The potential states of the context.
+
   Nd: NaturalDuration
     The length of this entire context build from pieces.
     Pd (1/2) + Fd (1/2) = Whole context 2/2 (1)
 
   Pt: Present
     The current state, now.
+
   St: Start
     The event that began the context.
+
   Et: End
     The event that will end the context.
 
 
+MetricTime
+  1:
+  2:
 
+
+MetricTime2
+  1:
+
+
+TimeCube
+  1:
+
+
+TimeCube2
+  1:
+
+
+TruthTableProgression
+  1:
+  2:
+  3:
+
+
+UniversalPlot
+  1:
+  2:
