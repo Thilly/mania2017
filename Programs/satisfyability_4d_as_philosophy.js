@@ -6,7 +6,7 @@
  *
  */
 
-var UNIVERSE = require('./modules/universe_philosophy.js'); // “If you wish to make an apple pie from scratch, you must first invent the universe.” ― Carl Sagan
+var UNIVERSE = require('./modules/universe.js'); // “If you wish to make an apple pie from scratch, you must first invent the universe.” ― Carl Sagan
 
 var BEGINNING = 0;  // “Isn't it nice to think that tomorrow is a new day with no mistakes in it yet?” ― L.M. Montgomery
 var reality = new UNIVERSE();  // "My goal is simple. It is a complete understanding of the universe, why it is as it is and why it exists at all." - Stephen Hawking
