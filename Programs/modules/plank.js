@@ -11,7 +11,6 @@ function Plank(in_steps, in_length) {
   if (in_length)
     length = in_length;
 
-
   function linearStepForward(step_location) {
     // step directly into the next 'sub-plank'
     var next_length = length + 1;
@@ -41,30 +40,33 @@ function Plank(in_steps, in_length) {
       plank_GM   // geometrically zoom out 'geometric --'
   */
 
-  this.draw = function (context, view_scale) {
-    var plank_size = (view_scale / length) * DEFAULT_PLANK_SIZE;
+  this.draw = function (context, offsetX, offsetY) {
+    var plank_size = (1 / length) * DEFAULT_PLANK_SIZE;
+    var height = context.canvas.height + DEFAULT_PLANK_SIZE;
+    var width = context.canvas.width + DEFAULT_PLANK_SIZE;
+    var opacity = (VIEW_SCALE < length) ? VIEW_SCALE / length : length / VIEW_SCALE;
+    context.translate(offsetX * length, offsetY * length);
+    context.strokeStyle = 'rgba(0,0,0,' + opacity + ')';
 
     // longitude
-    for (var penX = 0; penX < context.canvas.width; penX += plank_size) {
+    for (var penX = -plank_size; penX <= width; penX += plank_size) {
       context.beginPath();
-      context.moveTo(penX, 0);
-      context.lineTo(penX, context.canvas.height);
-      context.strokeStyle = 'rgba(0,0,0,' + view_scale / length + ')';
+      context.moveTo(penX, -DEFAULT_PLANK_SIZE);
+      context.lineTo(penX, height + DEFAULT_PLANK_SIZE);
       context.stroke();
     }
 
     // latitude
-    for (var penY = 0; penY < context.canvas.height; penY += plank_size) {
+    for (var penY = -plank_size; penY <= height; penY += plank_size) {
       context.beginPath();
-      context.moveTo(0, penY);
-      context.lineTo(context.canvas.width, penY);
-      context.strokeStyle = 'rgba(0,0,0,' + view_scale / length + ')';
+      context.moveTo(-DEFAULT_PLANK_SIZE, penY);
+      context.lineTo(width + DEFAULT_PLANK_SIZE, penY);
       context.stroke();
     }
 
     // labels
-    for (penX = plank_size/2; penX < context.canvas.width; penX += plank_size) {
-      for (penY = plank_size/2; penY < context.canvas.height; penY += plank_size) {
+    for (penX = plank_size/2 - plank_size; penX <= width; penX += plank_size) {
+      for (penY = plank_size/2 - plank_size; penY <= height; penY += plank_size) {
         context.strokeText(length, penX, penY)
     }}
   };
