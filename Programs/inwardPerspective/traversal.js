@@ -94,7 +94,6 @@ function handleRightClick(event){
 
 function handleClick(event) {
   event.preventDefault();
-  alert(event);
 }
 
 
