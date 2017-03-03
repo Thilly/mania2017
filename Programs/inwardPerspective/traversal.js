@@ -3,6 +3,7 @@ var DEFAULT_STEP = 1;
 var CANVAS, CONTEXT;
 var OFFSETX = 0;
 var OFFSETY = 0;
+var MAX_PLANKS = 10;
 var planks = [];
 var DRAW_ALL_PLANKS = true;
 
@@ -11,7 +12,7 @@ window.onload = function() {
   CONTEXT = canvas.getContext('2d');
 
   for(var i = 0; i < MAX_PLANKS; i++) {
-    planks.push(new Plank([1], 1));
+    planks.push(new Plank([1], i));
   }
   window.addEventListener('keydown', handlePress);
   CANVAS.addEventListener('click', handleClick);
