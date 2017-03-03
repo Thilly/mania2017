@@ -1,5 +1,5 @@
 
-var DEFAULT_PLANK_SIZE = 400;
+var DEFAULT_PLANK_SIZE = 800;
 function Plank(in_steps, in_length) {
 
   var step = [1];  // what portion/ratio of the context observing
