@@ -10,18 +10,9 @@ window.onload = function() {
   CANVAS = document.getElementById('canvas');
   CONTEXT = canvas.getContext('2d');
 
-  planks = [
-    new Plank([1], 1),
-    new Plank([1], 2),
-    new Plank([1], 3),
-    new Plank([1], 4),
-    new Plank([1], 5),
-    new Plank([1], 6),
-    new Plank([1], 7),
-    new Plank([1], 8),
-    new Plank([1], 9),
-    new Plank([1], 10)
-  ];
+  for(var i = 0; i < MAX_PLANKS; i++) {
+    planks.push(new Plank([1], 1));
+  }
   window.addEventListener('keydown', handlePress);
   CANVAS.addEventListener('click', handleClick);
   CANVAS.addEventListener('contextmenu', handleRightClick);

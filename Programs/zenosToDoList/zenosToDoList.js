@@ -11,7 +11,8 @@ var rl = readline.createInterface({
  */
 
 var currentPlank = '1/1';
-var completed = {}; // if everything that exists has a place, place too will have a place, and so on ad infinitum.
+var completed = {};  // if everything that exists has a place, place too will have a place, and so on ad infinitum.
+var cronological = [];
 var todo = {};
   todo[currentPlank] = process.argv[2] || 'originalTask';
 
@@ -47,13 +48,14 @@ function removeTask() {
   var step = currentPlank.split('/')[0];
   var fraction = currentPlank.split('/')[1];
   completed[get_key()] = todo[get_key()];
+  cronological.push(todo[get_key()]);
   delete todo[get_key()];
 
   fraction /= 2;
   step = 1;
   if (fraction < 1) {
     console.log('tasks complete');
-    console.log(completed);
+    console.log(cronological);
     process.exit(0);
   }
 
