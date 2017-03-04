@@ -1,5 +1,4 @@
 
-var DEFAULT_PLANK_SIZE = 800;
 function Plank(in_steps, in_length) {
 
   var step = [1];  // what portion/ratio of the context observing
@@ -41,26 +40,26 @@ function Plank(in_steps, in_length) {
   */
 
   this.draw = function (context, offsetX, offsetY) {
-    var plank_size = (1 / length) * DEFAULT_PLANK_SIZE;
-    var height = context.canvas.height + DEFAULT_PLANK_SIZE;
-    var width = context.canvas.width + DEFAULT_PLANK_SIZE;
-    var opacity = (VIEW_SCALE < length) ? VIEW_SCALE / length : length / VIEW_SCALE;
+    var plank_size = (1 / length) * current_plank_size;
+    var height = context.canvas.height + current_plank_size;
+    var width = context.canvas.width + current_plank_size;
+    var opacity = (current_plank < length) ? current_plank / length : length / current_plank;
     context.translate(offsetX * length, offsetY * length);
     context.strokeStyle = 'rgba(0,0,0,' + opacity + ')';
 
     // longitude
     for (var penX = -plank_size; penX <= width; penX += plank_size) {
       context.beginPath();
-      context.moveTo(penX, -DEFAULT_PLANK_SIZE);
-      context.lineTo(penX, height + DEFAULT_PLANK_SIZE);
+      context.moveTo(penX, -current_plank_size);
+      context.lineTo(penX, height + current_plank_size);
       context.stroke();
     }
 
     // latitude
     for (var penY = -plank_size; penY <= height; penY += plank_size) {
       context.beginPath();
-      context.moveTo(-DEFAULT_PLANK_SIZE, penY);
-      context.lineTo(width + DEFAULT_PLANK_SIZE, penY);
+      context.moveTo(-current_plank_size, penY);
+      context.lineTo(width + current_plank_size, penY);
       context.stroke();
     }
 
