@@ -1,15 +1,38 @@
 var DEFAULT_STEP = 1;
 var CANVAS, CONTEXT;
 var MAX_PLANKS = 10;
-var DRAW_ALL_PLANKS = true;
-var PLANKS_TO_DRAW = 3;
+var DRAW_ALL_PLANKS = false;
+var PLANKS_TO_DRAW = 4;
 var DEFAULT_PLANK_SIZE = 800;
-
 
 var OFFSETX = 0;
 var OFFSETY = 0;
-var current_plank = 1;
-var current_plank_size = DEFAULT_PLANK_SIZE;
+
+var colors = [
+  'black',
+  'blue',
+  'green',
+  'red',
+  'black',
+  'blue',
+  'green',
+  'red',
+]
+
+var current_plank = {
+  size: DEFAULT_PLANK_SIZE,
+  length: 1,
+  stepX: 0,
+  stepY: 0
+};
+
+var target_plank = {
+  size: DEFAULT_PLANK_SIZE,
+  length: 1,
+  stepX: 0,
+  stepY: 0
+};
+
 var planks = [];
 
 window.onload = function() {
@@ -17,109 +40,68 @@ window.onload = function() {
   CONTEXT = canvas.getContext('2d');
 
   for(var i = 0; i < MAX_PLANKS; i++) {
-    planks.push(new Plank([1], i));
+    planks.push(new Plank(i));
   }
   window.addEventListener('keydown', handlePress);
   CANVAS.addEventListener('click', handleClick);
   CANVAS.addEventListener('contextmenu', handleRightClick);
-  draw();
+  draw(current_plank);
 };
 
-function draw() {
-  CONTEXT.clearRect(0, 0, CONTEXT.canvas.width, CONTEXT.canvas.height);
-  var start_plank = (current_plank > 1) ? current_plank - 1 : 1;
-  var visible_planks = (DRAW_ALL_PLANKS) ? planks : planks.slice(start_plank, start_plank + PLANKS_TO_DRAW);
-  visible_planks.forEach(function(plank) {
-    plank.draw(CONTEXT, OFFSETX, OFFSETY);
-    CONTEXT.setTransform(1, 0, 0, 1, 0, 0);
-  });
-}
-
-var key_functions = [];
-// TODO: create methods on plank/universe for navigation?
-// TODO: leave as the goldfish/camera/agent of navigation?
-
-function moveUp() {
-// Ww 'up' 87, 38
-  if (OFFSETY > 0)
-    OFFSETY -= DEFAULT_STEP
-}
-key_functions[87] = moveUp;
-key_functions[38] = moveUp;
-
-function moveDown() {
-// Ss 'down' 83, 40
-  if (OFFSETY < DEFAULT_PLANK_SIZE)
-    OFFSETY += DEFAULT_STEP
-}
-key_functions[83] = moveDown;
-key_functions[40] = moveDown;
-
-function moveLeft() {
-// Aa 'left' 65, 37
-  if (OFFSETX > 0)
-    OFFSETX -= DEFAULT_STEP
-}
-key_functions[65] = moveLeft;
-key_functions[37] = moveLeft;
-
-function moveRight() {
-// Dd 'right' 68, 39
-  if (OFFSETX < DEFAULT_PLANK_SIZE)
-    OFFSETX += DEFAULT_STEP
-}
-key_functions[68] = moveRight;
-key_functions[39] = moveRight;
-
-function handlePress(event) {
-  if (key_functions[event.keyCode]) {
-    key_functions[event.keyCode]();
-    draw();
-  }
-}
-
-function handleRightClick(event) {
+function handleRightClick(event) {  //todo: make move out currently next_plank query
   event.preventDefault();
-  var translate = getClickedPlank(event);
-  moveOut();
-  draw();
+  var new_target_plank = getClickedPlank(event);
+  console.log(new_target_plank);
   return false
 }
 
-function handleClick(event) {
+function handleClick(event) { //todo: animate traversal
   event.preventDefault();
-  var translate = getClickedPlank(event);
+  target_plank = getClickedPlank(event);
+  console.log(target_plank);
   moveIn();
-  draw();
+  draw(target_plank);
+  current_plank = {
+    size: target_plank.size,
+    length: target_plank.length,
+    stepX: target_plank.stepX,
+    stepY: target_plank.stepY
+  };
   return false;
 }
 
-function moveIn() {
-  current_plank += 1;
-  if (current_plank > MAX_PLANKS) {
-    current_plank = MAX_PLANKS;
-  }
-  current_plank_size = DEFAULT_PLANK_SIZE * current_plank;
+function draw(target) {
+  var start_plank = (current_plank.length > 1) ? current_plank.length - 1 : 1;
+  var visible_planks = (DRAW_ALL_PLANKS) ? planks : planks.slice(start_plank, start_plank + PLANKS_TO_DRAW);
+  var offsetX = target.stepX * DEFAULT_PLANK_SIZE;
+  var offsetY = target.stepY * DEFAULT_PLANK_SIZE;
+
+  CONTEXT.setTransform(1, 0, 0, 1, 0, 0);
+  CONTEXT.clearRect(0, 0, CONTEXT.canvas.width, CONTEXT.canvas.height);
+  CONTEXT.translate(-offsetX, -offsetY);
+  CONTEXT.font = '24px sans-serif';
+
+  visible_planks.forEach(function(plank) {
+    plank.draw(CONTEXT, offsetX, offsetY);
+  });
 }
 
-function moveOut() {
-  current_plank -= 1;
-  if (current_plank < 1) {
-    current_plank = 1;
+function moveIn() {
+  current_plank.length += 1;
+  if (current_plank.length > MAX_PLANKS) {
+    current_plank.length = MAX_PLANKS;
   }
-  current_plank_size = DEFAULT_PLANK_SIZE * current_plank;
+  current_plank.size = DEFAULT_PLANK_SIZE * current_plank.length;
 }
 
 function getClickedPlank(event) {
-  for (var i = 0; i < planks.length; i++) {
-    var xPos = Math.floor(event.x / i);
-    var yPos = Math.floor(event.y / i);
-    console.log('x:' + xPos + ' y:' + yPos + ' plank_length:' + i);
-  }
-
+  var xClick = (current_plank.stepX * DEFAULT_PLANK_SIZE) + event.x;
+  var yClick = (current_plank.stepY * DEFAULT_PLANK_SIZE) + event.y;  // normailzed to context
+  var next_length = current_plank.length + 1;
   return {
-    x: xPos,
-    y: yPos,
-    length: i
-  }
+    size: DEFAULT_PLANK_SIZE / next_length,
+    length: current_plank.length + 1,
+    stepX: Math.floor(xClick / (DEFAULT_PLANK_SIZE * current_plank.length / next_length)),
+    stepY: Math.floor(yClick / (DEFAULT_PLANK_SIZE * current_plank.length / next_length))
+  };
 }
