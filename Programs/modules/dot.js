@@ -1,5 +1,3 @@
-
-
 function Dot(in_x, in_y, in_color) {
 
   var radius = DOT_RADIUS;
@@ -13,13 +11,13 @@ function Dot(in_x, in_y, in_color) {
     context.beginPath();
     context.arc(this.xPos, this.yPos, radius, 0, Math.PI * 2);
     context.strokeStyle = this.color;
-    context.fillStyle = this.color;
     context.stroke();
+
     for(var i = 0; i < this.values.length; i += 3) {
       var direction = this.values[i];
       var intensity = this.values[i+1];
       context.moveTo(this.xPos, this.yPos);
-      context.lineTo(this.xPos + intensity * Math.cos(direction), this.yPos + intensity * Math.sin(direction));
+      context.lineTo(this.xPos + intensity * Math.sin(direction), this.yPos + intensity * Math.cos(direction));
       context.strokeStyle = this.values[i+2];
       context.stroke();
     }
@@ -28,9 +26,9 @@ function Dot(in_x, in_y, in_color) {
   this.updateValues = function(actors) {
     this.values = [];
     for(var i = 0; i < actors.length; i++) {
-      var direction = Math.atan2(this.xPos - actors[i].xPos, this.yPos - actors[i].yPos);
+      var direction = Math.atan2(actors[i].xPos - this.xPos, actors[i].yPos - this.yPos);
       var distance = Math.pow(this.xPos - actors[i].xPos, 2) + Math.pow(this.yPos - actors[i].yPos, 2);
-      var intensity = MAX_VALUE * (distance / Math.pow(CANVAS_SIZE, 2));
+      var intensity = Math.abs(MAX_VALUE - (MAX_VALUE * (distance / Math.pow(CANVAS_SIZE, 2))));
       this.values.push(direction);
       this.values.push(intensity);
       this.values.push(actors[i].color);
