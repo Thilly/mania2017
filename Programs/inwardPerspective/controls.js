@@ -1,3 +1,6 @@
+var DEFAULT_STEP = 1;
+var OFFSETX = 0;
+var OFFSETY = 0;
 
 var key_functions = [];
 // TODO: create methods on plank/universe for navigation?

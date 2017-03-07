@@ -1,23 +1,12 @@
-var DEFAULT_STEP = 1;
-var CANVAS, CONTEXT;
+var CANVAS, CONTEXT, DEFAULT_PLANK_SIZE, INTERVAL;
 var MAX_PLANKS = 10;
 var DRAW_ALL_PLANKS = false;
 var PLANKS_TO_DRAW = 4;
-var DEFAULT_PLANK_SIZE = 800;
+var ANIMATION_FRAMES = 100;
+var FRAME_RATE = 1000/60;
 
-var OFFSETX = 0;
-var OFFSETY = 0;
-
-var colors = [
-  'black',
-  'blue',
-  'green',
-  'red',
-  'black',
-  'blue',
-  'green',
-  'red',
-]
+var planks = [];
+var plank_history = [];
 
 var current_plank = {
   size: DEFAULT_PLANK_SIZE,
@@ -25,7 +14,6 @@ var current_plank = {
   stepX: 0,
   stepY: 0
 };
-
 var target_plank = {
   size: DEFAULT_PLANK_SIZE,
   length: 1,
@@ -33,32 +21,44 @@ var target_plank = {
   stepY: 0
 };
 
-var planks = [];
-
 window.onload = function() {
   CANVAS = document.getElementById('canvas');
-  CONTEXT = canvas.getContext('2d');
-
+  CONTEXT = CANVAS.getContext('2d');
+  resizeCanvas();
   for(var i = 0; i < MAX_PLANKS; i++) {
     planks.push(new Plank(i));
   }
-  window.addEventListener('keydown', handlePress);
+
   CANVAS.addEventListener('click', handleClick);
   CANVAS.addEventListener('contextmenu', handleRightClick);
   draw(current_plank);
 };
 
-function handleRightClick(event) {  //todo: make move out currently next_plank query
+window.onresize = function() {
+  resizeCanvas();
+  draw(current_plank);
+};
+
+function handleRightClick(event) {
   event.preventDefault();
-  var new_target_plank = getClickedPlank(event);
-  console.log(new_target_plank);
+  if (plank_history.length > 0) {
+    target_plank = getLastPlank();
+    moveOut();
+    draw(target_plank);
+    current_plank = {
+      size: target_plank.size,
+      length: target_plank.length,
+      stepX: target_plank.stepX,
+      stepY: target_plank.stepY
+    };
+  }
   return false
 }
 
-function handleClick(event) { //todo: animate traversal
+function handleClick(event) { //todo: animate traversals
   event.preventDefault();
   target_plank = getClickedPlank(event);
-  console.log(target_plank);
+  plank_history.push(copyPlank(current_plank));
   moveIn();
   draw(target_plank);
   current_plank = {
@@ -88,9 +88,11 @@ function draw(target) {
 
 function moveIn() {
   current_plank.length += 1;
-  if (current_plank.length > MAX_PLANKS) {
-    current_plank.length = MAX_PLANKS;
-  }
+  current_plank.size = DEFAULT_PLANK_SIZE * current_plank.length;
+}
+
+function moveOut() {
+  current_plank.length -= 1;
   current_plank.size = DEFAULT_PLANK_SIZE * current_plank.length;
 }
 
@@ -104,4 +106,26 @@ function getClickedPlank(event) {
     stepX: Math.floor(xClick / (DEFAULT_PLANK_SIZE * current_plank.length / next_length)),
     stepY: Math.floor(yClick / (DEFAULT_PLANK_SIZE * current_plank.length / next_length))
   };
+}
+
+function getLastPlank(){
+  return plank_history.pop();
+}
+
+function copyPlank(in_plank) {
+  return {
+    size: in_plank.size,
+    length: in_plank.length,
+    stepX: in_plank.stepX,
+    stepY: in_plank.stepY
+  }
+}
+
+function resizeCanvas() {
+  var size = (window.innerHeight > window.innerWidth)? window.innerWidth : window.innerHeight;
+  size -= 10;
+  CANVAS.width = size;
+  CANVAS.height = size;
+  DEFAULT_PLANK_SIZE = size;
+  current_plank.size = DEFAULT_PLANK_SIZE;
 }
