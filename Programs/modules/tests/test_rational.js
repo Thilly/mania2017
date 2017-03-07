@@ -17,5 +17,7 @@ console.log('i should print 3/4: ' + one_half.add(one_quarter));
 console.log('i should print 1/2: ' + one_half.sub(one_quarter));
 console.log('i should print 1/8: ' + one_half.mult(one_quarter));
 console.log('i should print 1/2: ' + one_half.divide(one_quarter));
+console.log('i should print 0.5: ' + one_half.toFloat());
+
 
 

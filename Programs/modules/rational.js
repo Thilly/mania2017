@@ -70,6 +70,10 @@ function Rational(in_value) {
     return this.numer + '/' + this.denom;
   };
 
+  this.toFloat = function() {  // necessary evil :P
+    return this.numer / this.denom;
+  };
+
   function checkValue(rational) {
     if (isNumeric(rational)) {
       if (rational.toString().split('.').length === 2) {
