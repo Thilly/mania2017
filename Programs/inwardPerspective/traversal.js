@@ -32,6 +32,7 @@ window.onload = function() {
   CANVAS.addEventListener('click', handleClick);
   CANVAS.addEventListener('contextmenu', handleRightClick);
   draw(current_plank);
+  renderQueriedData(current_plank, query(current_plank));
 };
 
 window.onresize = function() {
@@ -58,6 +59,9 @@ function handleRightClick(event) {
 function handleClick(event) { //todo: animate traversals
   event.preventDefault();
   target_plank = getClickedPlank(event);
+  if(target_plank.length + PLANKS_TO_DRAW > planks.length) {
+    planks.push(new Plank(planks.length));
+  }
   plank_history.push(copyPlank(current_plank));
   moveIn();
   draw(target_plank);
@@ -67,8 +71,18 @@ function handleClick(event) { //todo: animate traversals
     stepX: target_plank.stepX,
     stepY: target_plank.stepY
   };
+  renderQueriedData(current_plank, query(current_plank));
   return false;
 }
+
+function query(plank) { // todo: geoSearch a datastore
+  return plank.stepX + ',' + plank.stepY + '/' + plank.length;
+}
+
+function renderQueriedData(plank, data) { //todo: make queried data a 'drawable' for rendering different media
+  CONTEXT.fillText(data, (plank.stepX * DEFAULT_PLANK_SIZE) + 100, (plank.stepY * DEFAULT_PLANK_SIZE) + 100)
+}
+
 
 function draw(target) {
   var start_plank = (current_plank.length > 1) ? current_plank.length - 1 : 1;

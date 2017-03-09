@@ -2,14 +2,6 @@ var COLORS = [
   'black',
   'blue',
   'green',
-  'red',
-  'black',
-  'blue',
-  'green',
-  'red',
-  'black',
-  'blue',
-  'green',
   'red'
 ];
 function Plank(in_length) {
@@ -21,8 +13,8 @@ function Plank(in_length) {
     var height = context.canvas.height * current_plank.length;
     var width = context.canvas.width * current_plank.length;
 
-    context.strokeStyle = COLORS[this.length];
-    context.fillStyle = COLORS[this.length];
+    context.strokeStyle = COLORS[this.length % COLORS.length];
+    context.fillStyle = COLORS[this.length % COLORS.length];
     context.lineWidth = 2;
 
     // longitude
