@@ -52,6 +52,7 @@ function handleRightClick(event) {
       stepX: target_plank.stepX,
       stepY: target_plank.stepY
     };
+    renderQueriedData(current_plank, query(current_plank));
   }
   return false
 }
