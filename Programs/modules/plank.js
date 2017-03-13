@@ -42,3 +42,38 @@ function Plank(in_length) {
   };
 
 }
+
+function moveIn() {
+  current_plank.length += 1;
+  current_plank.size = DEFAULT_PLANK_SIZE * current_plank.length;
+}
+
+function moveOut() {
+  current_plank.length -= 1;
+  current_plank.size = DEFAULT_PLANK_SIZE * current_plank.length;
+}
+
+function getClickedPlank(event) {
+  var xClick = (current_plank.stepX * DEFAULT_PLANK_SIZE) + event.x;
+  var yClick = (current_plank.stepY * DEFAULT_PLANK_SIZE) + event.y;  // normailzed to context
+  var next_length = current_plank.length + 1;
+  return {
+    size: DEFAULT_PLANK_SIZE / next_length,
+    length: current_plank.length + 1,
+    stepX: Math.floor(xClick / (DEFAULT_PLANK_SIZE * current_plank.length / next_length)),
+    stepY: Math.floor(yClick / (DEFAULT_PLANK_SIZE * current_plank.length / next_length))
+  };
+}
+
+function getLastPlank(){
+  return plank_history.pop();
+}
+
+function copyPlank(in_plank) {
+  return {
+    size: in_plank.size,
+    length: in_plank.length,
+    stepX: in_plank.stepX,
+    stepY: in_plank.stepY
+  }
+}
