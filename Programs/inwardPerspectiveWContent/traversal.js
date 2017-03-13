@@ -60,9 +60,8 @@ function draw(target) {
   var data = query(target);
   if(data.text) {  // display static content
     renderQueriedData(target, data.text);
-    if (data.query) {
-      // todo: client query parametizes query for remote resource
-    }
+  } else if(buildDBString(target)) {  // print db query
+    renderQueriedData(target, buildDBString(target));
   } else {  // print coords
     renderQueriedData(target, data);
   }
