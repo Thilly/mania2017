@@ -32,7 +32,7 @@ var GENRE = [
 
 
 function buildDBString(plank) {
-  var page = plank.stepX + plank.stepY
+  var page = plank.stepX + plank.stepY;
   var genres = getGenres(plank.length);
   if (genres.length) {
     return 'Querying for page' + page + ' of ' + genres;

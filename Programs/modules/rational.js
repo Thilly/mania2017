@@ -2,6 +2,17 @@
 
 module.exports = Rational;
 
+var LETTERS = ['NOTUSED', 'a', 'b', 'c', 'd', 'e', 'f'];
+var STRING_MAPPING = {
+  'a': 1,
+  'b': 2,
+  'c': 3,
+  'd': 4,
+  'e': 5,
+  'f': 6
+};
+
+
 function Rational(in_value) {
 
   var in_rational = checkValue(in_value);
@@ -10,7 +21,10 @@ function Rational(in_value) {
 
   this.add = function(in_value) {
     var oper_rational = checkValue(in_value);
-    if(this.denom != oper_rational.denom) {
+    if(this.denom === 0) {
+      this.denom = oper_rational.denom;
+      this.numer = oper_rational.numer;
+    } else if(this.denom != oper_rational.denom) {
       var inNumerator = this.denom * oper_rational.numer;
       this.numer *= oper_rational.denom;
       this.numer += inNumerator;
@@ -66,6 +80,28 @@ function Rational(in_value) {
     return this;
   };
 
+  this.encode = function(string_in, key) {
+    this.numer = 1;
+    this.denom = 0;  // set to 'unknown position'
+    for(var i = 0; i < string_in.length; i++){
+      var encoded_top = getNumberFromLetter(string_in[i]);
+      var encoded_bottom = key;
+      this.mult(new Rational({numer:1, denom:encoded_bottom}));
+      this.add(new Rational({numer:encoded_top, denom:encoded_bottom}));
+    }
+    return this;
+  };
+
+  this.decode = function(key){
+    var current_value = getStepFromFraction(this, key);
+    var current_letter = LETTERS[current_value];
+    this.sub(new Rational({numer: current_value, denom: key}));
+    this.divide(new Rational({numer: 1, denom: key}));
+    if(this.numer === 0)
+      return current_letter;
+    return this.decode(key) + current_letter;
+  };
+
   this.toString = function() {
     return this.numer + '/' + this.denom;
   };
@@ -103,4 +139,16 @@ function Rational(in_value) {
   function isNumeric(n) {
     return !isNaN(parseFloat(n)) && isFinite(n);
   }
+}
+
+function getStepFromFraction(rational, key){
+  for(var i = 1; i <= key; i++) {  // find 'containing' letter
+    if (rational.numer/rational.denom < i/key) {
+      return i-1;
+    }
+  }
+}
+
+function getNumberFromLetter(letter){
+  return STRING_MAPPING[letter];
 }

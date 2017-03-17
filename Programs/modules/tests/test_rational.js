@@ -19,5 +19,7 @@ console.log('i should print 1/8: ' + one_half.mult(one_quarter));
 console.log('i should print 1/2: ' + one_half.divide(one_quarter));
 console.log('i should print 0.5: ' + one_half.toFloat());
 
-
+console.log('i should print 2340/2401:' + one.encode('beef', 7));
+var beef = new Rational({numer: 2340, denom: 2401});
+console.log('i should print beef::' + beef.decode(7));
 
