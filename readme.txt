@@ -1,14 +1,6 @@
-MathForOne
-  Reasons to explain 0 <= R <= 1
-MathFromOne
-  conjecture on applications of new math structure
-DecisionMaking
-  conjecture applied to choice and agency
-Programs
-  applications using 'new' math
-Physics
-  conjecture applied to the universe
-PhilosophicalAnecdotes
-  conjecture applied to meta-ethics
-RevisedHistoryAnecdotes
-  playing with larger 'metas' to try and capture historic information flow
+I am bipolar and I created these 'works' during a manic episode.
+Some people are manic poets, some are manic painters. I was a manic scribbler and programmer.
+I was fighting with paradoxes and attempting to solve some really hard questions while I 'understood everything'.
+I made some neat things while trying to solidify an atypical perspective.
+I think its disingenuous to try to forget one of the 'loudest' experiences of my life.
+Maybe I can avail what I went through and help illustrate the bipolar journey in a different medium.
